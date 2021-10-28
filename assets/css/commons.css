@@ -1,33 +1,70 @@
-.container-wrap{
-    width: 960px;
-    margin: 0 auto;
+/* commons */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NanumSquare", sans-serif;
+  font-style: 15px;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* 폰트 두께 */
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+.light {
+  font-weight: 300;
+}
+
+/* 콘텐츠 너비 */
+.container-wrap {
+  width: 960px;
+  margin: 0 auto;
 }
 
 /* 레이아웃 */
-
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
-
 
 /* 마진 */
-.mrgin-common{
-    margin: 40px 0;
+.mrgin-common {
+  margin: 40px 0;
 }
 
-.margin-20{
-    margin: 20px 0;
+.margin-20 {
+  margin: 20px 0;
 }
 
-.margin-10{
-    margin: 10px 0;
+.margin-10 {
+  margin: 10px 0;
 }
 
-@media(max-width:960px){
-    .container-wrap{
-        width: 100%;
-    }
+/* 패딩 */
+.padding-10 {
+    padding: 10px 0;
 }
