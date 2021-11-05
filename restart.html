@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     
     <style>
+        @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
         * {
             margin: 0;
             padding: 0;
+        }
+        body {
+            font-family: 'NanumSquare', serif;
         }
 
         a {
@@ -24,8 +29,7 @@
         }
 
         header {
-            width: 100%;
-            background-color: #555;
+            width: 100%;           
         }
 
         .gnb {
@@ -49,19 +53,69 @@
         .left-menu li {
             margin-left: 40px;
             margin-right: 10px;
-        }
-
-        .right-navi {
-            display: flex;
-            align-items: center;
+            color: #666;
         }
 
         .right-menu {
             display: flex;
+            align-items: center;
         }
 
         .right-menu li {
             margin-right: 20px;
+            font-size: 14px;
+            padding: 24px;
+        }
+
+        .xi-bars {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 32px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gnb {                
+                height: 100%;
+                flex-direction: column;
+            }
+            
+
+            .right-menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;               
+                height: 100%;
+            }
+
+            .right-menu li {
+                text-align: center;
+            }
+
+            .xi-bars {
+                display: block;
+            }
+
+            /* 자바스크립 동작 */
+            .block {
+                display: flex;
+            }
+
+        }
+
+        @media screen and (max-width: 1024px) {
+            .right-menu li {
+                margin-right: 0;
+                padding: 10px;
+            }
+            
+        }
+
+        @media screen and (max-width: 1320px) {
+            .left-menu {
+                display: none;
+            }
         }
 
         
@@ -84,18 +138,28 @@
                 </ul>
             </div>
 
-            <div class="right-navi">
-                <ul class="right-menu">
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">쿠폰사용</a></li>
-                    <li><a href="#">대량주문 문의</a></li>
-                </ul>
-            </div>
+            <ul class="right-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">쿠폰사용</a></li>
+                <li><a href="#">대량주문 문의</a></li>
+            </ul>
         </nav>
-        <!-- <div class="menu-btn"><i class="xi-bars xi-2x"></i></div> -->
+        <a href="#" class="toggle_icon">
+            <i class="xi-bars xi-2x"></i>
+        </a>
     </header>
+
+    <script>
+        let toggle=document.querySelector('.toggle_icon')
+        let menu=document.querySelector('.right-menu')
+
+        toggle.addEventListener('click', ()=>{
+            menu.classList.toggle('block')
+        })
+
+    </script>
 
 
 </body>
