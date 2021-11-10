@@ -8,7 +8,7 @@
     <title>제주용암수</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -39,19 +39,24 @@
     </header>
 
     <!-- 이미지광고 슬라이더 -->
-    <section id="section01" class="main">
+    <section class="main">
         <div class="slide pc-slide">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide bg1"></div>
-                    <div class="swiper-slide bg2"></div>
-                    <div class="swiper-slide bg3"></div>
+                    <div class="swiper-slide bg1">
+                        <button class="btn1">자세히 보기</button>
+                    </div>
+                    <div class="swiper-slide bg2">
+                        <button class="btn1">자세히 보기</button>
+                    </div>
+                    <div class="swiper-slide bg3">
+                        <button class="btn1">자세히 보기</button>
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-            <button class="btn1">자세히 보기</button>
         </div>
 
         <div class="slide mobile-slide">
@@ -66,52 +71,51 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-
-
     </section>
 
     <!-- 공지사항 -->
-    <section class="notice container-wrap">
-        <div class="notice-contents">
+    <section class="notice ">
+        <div class="container-wrap notice-contents">
             <h4 class="title bold">공지사항</h4>
             <a href="#">맛있는 물, 닥터유 제주용암수. 최대 25% 가격인하</a>
         </div>
     </section>
 
     <!-- 정기배송 -->
-    <section id="section02" class="delivery container-wrap">
-        <h2>돈과 시간을 아껴주는, 정기배송</h2>
+    <section class="delivery">
+        <div class="container-wrap">
+            <h2>돈과 시간을 아껴주는, 정기배송</h2>
 
-        <div class="row m-flex text-center">
-            <div class="w-33">
-                <img src="./assets/image/bg_regular_01.png" alt="">
-                <p>잊고 사는 즐거움</p>
-                <p>한번 주문으로원하는 요일, 장소로 배송</p>
+            <div class="row m-flex text-center">
+                <div class="w-33">
+                    <img src="./assets/image/bg_regular_01.png" alt="">
+                    <p>잊고 사는 즐거움</p>
+                    <p>한번 주문으로원하는 요일, 장소로 배송</p>
+                </div>
+                <div class="w-33">
+                    <img src="./assets/image/bg_regular_02.png" alt="">
+                    <p>매번 편리하게</p>
+                    <p>간편한 주문, 세 번 클릭으로 주문 끝</p>
+                </div>
+                <div class="w-33">
+                    <img src="./assets/image/bg_regular_03.png" alt="">
+                    <p>안심하세요</p>
+                    <p>언제든지 취소/해지가가능합니다.</p>
+                </div>
             </div>
-            <div class="w-33">
-                <img src="./assets/image/bg_regular_02.png" alt="">
-                <p>매번 편리하게</p>
-                <p>간편한 주문, 세 번 클릭으로 주문 끝</p>
-            </div>
-            <div class="w-33">
-                <img src="./assets/image/bg_regular_03.png" alt="">
-                <p>안심하세요</p>
-                <p>언제든지 취소/해지가가능합니다.</p>
+            <div class="text-center">
+                <button class="wrap-btn">정기배송 신청하기</button>
             </div>
         </div>
-        <div class="text-center">
-            <button class="wrap-btn">정기배송 신청하기</button>
-        </div>
+      
     </section>
 
     <!-- 용암수 소개 -->
-    <section id="section03" class="introduce">
-        <div class="wrap text-center">
+    <section id="section03" class="introduce bg4">
+        <div class="introduce-text wrap text-center">
             <h2><b>경도</b>가 좋은 물의 기준, Dr.You 제주용암수</h2>
         </div>
-        <div class="bg4"></div>
-
-        <div class="conts-area">            
+        <div class="effect-area">
             <div class="point point-1">
                 <div class="bg"></div>
                 <span class="dot"></span>
@@ -130,53 +134,59 @@
             </div>
         </div>
     </section>
+
     <hr>
-    <section id="section04" class=""></section>
-    <div class="order">
-        <div class="fast-order">
-            <h4>오늘 밤 주문하면 내일 도착!</h4>
-            <p>오후 11시까지 결제만 하세요. <br> 일부 도서산간지역은 예외</p>
+
+    <!-- 주문 -->
+    <section class="order">
+        <div class="row">
+            <div class="fast-order">
+                <h4>오늘 밤 주문하면 내일 도착!</h4>
+                <p>오후 11시까지 결제만 하세요. <br> 일부 도서산간지역은 예외</p>
+            </div>
+            <div class="mass-order">
+                <h4>법인/대량 구매</h4>
+                <p>20팩 이상 구매고객 <br> 대량주문 문의하기! </p>
+            </div>
         </div>
-        <div class="mass-order">
-            <h4>법인/대량 구매</h4>
-            <p>20팩 이상 구매고객 <br> 대량주문 문의하기! </p>
-        </div>
-    </div>
-    <div class="buttom-banner">
-        <div class="app-text">
-            <p>Dr.You 제주용암수 어플로 더욱 편하게 이용하세요!</p>
-        </div>
-        <div class="sns">
-            <img src="/image/btn_ios.png" class="ios" alt="ios">
-            <img src="/image/btn_android.png" class="android" alt="android">
-        </div>
-    </div>
-    <div class="top-button">
-        <a href="#"><img src="/image/btn_top.png" alt="맨위로"></a>
-    </div>
     </section>
 
+    <!-- 안드로이드 & iOS -->
+    <section>
+        <div class="banner">
+            <div class="app-text">
+                <p>Dr.You 제주용암수 어플로 더욱 편하게 이용하세요!</p>
+            </div>
+            <div class="store-link">
+                <img src="./assets/image/btn_ios.png" class="ios" alt="ios">
+                <img src="./assets/image/btn_android.png" class="android" alt="android">
+            </div>
+        </div>
+        <div class="top-button">
+            <a href="#"><img src="./assets/image/btn_top.png" alt="맨위로"></a>
+        </div>
+    </section>
 
+    <!-- 푸터 -->
     <footer>
-        <div class="text">
-            <p> <a href="#">회사소개</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">이용약관</a> <br>
-                <br>
-                (주)오리온 서울특별시 용산구 백범로 90다길 13(문배동) <br>
-                (주)오리온 대표자 : 이경재
-                사업자 등록번호 : 709-81-00727 <span class="check"><a href="#">사업자정보확인</a></span> <br>
-                통신판매업신고: 2019-서울용산-1143
-                고객센터 : 080-023-5701 (평일 09:00 ~ 17:30 / 주말, 공휴일 휴무) <br>
-                <br>
-                COPYRIGHT(C) JEJUYONGAMSOO ALL RIGHTS RESERVED
-            </p>
+        <div class="company-info">
+            <ul class="terms">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이용약관</a></li>
+            </ul>
+            <ul class="address">
+                <li>(주)오리온 서울특별시 용산구 백범로 90다길 13(문배동)</li>
+                <li>(주)오리온 대표자 : 이경재 사업자 등록번호 : 709-81-00727 <a href="#">사업자정보확인</a></li>
+                <li>통신판매업신고: 2019-서울용산-1143 고객센터 : 080-023-5701 (평일 09:00 ~ 17:30 / 주말, 공휴일 휴무)</li>
+            </ul>
+            <p>COPYRIGHT(C) JEJUYONGAMSOO ALL RIGHTS RESERVED</p>
         </div>
     </footer>
 
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
 
