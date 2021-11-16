@@ -242,21 +242,22 @@ header {
 }
 
 .point.point-1 {
-	top: 336px;
-	left: 521px;
+	top: 216px;
+	left: 53%;
 }
 .point.point-2 {
-	top: 386px;
-	left: 440px;
+	top: 267px;
+	left: 48.5%;
 }
 .point.point-3 {
-	top: 535px;
-	left: 460px;
+	top: 416px;
+	left: 49.7%;
 }
 .point.point-4 {
-	top: 577px;
-	left: 514px;
+	top: 458px;
+	left: 52.3%;
 }
+
 .point .bg {
 	position: absolute;
 	top: 0;
@@ -422,7 +423,7 @@ header {
 /* 푸터 */
 footer {
 	width: 100%;
-	height: 230px;
+	height: 250px;
 	background-color: #111;
 	position: relative;
 }
@@ -431,6 +432,7 @@ footer {
 	width: 50%;
 	height: inherit;
 	margin: 0 auto;
+	padding: 50px;
 }
 
 .terms {

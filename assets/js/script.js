@@ -1,3 +1,4 @@
+// Main Slide
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -18,3 +19,8 @@ const menuBtn = document.querySelector('.menu-btn');
 menuBtn.addEventListener('click', () => {
     navi.classList.toggle('gnb-btn');
 });
+
+// Animation effect AOS
+<script>
+  AOS.init();
+</script>
